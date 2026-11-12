@@ -33,9 +33,9 @@ function module.setupVoxel(part: Part, voxelResolution: number?, createModel: bo
 		for y=1, size_y do
 			for z=1, size_z do
 				local blockClone = block:Clone()
-				blockClone.Position = part.Position + Vector3.new(
+				blockClone.CFrame = part.CFrame * CFrame.new(
 					-part.Size.X/2 + (x - 0.5) * voxelResolution,
-					((-part.Size.Y/2) + part.Size.Y/2) + (y - 1) * voxelResolution,
+					-part.Size.Y/2 + (y - 0.5) * voxelResolution,
 					-part.Size.Z/2 + (z - 0.5) * voxelResolution
 				)
 			
