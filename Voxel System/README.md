@@ -109,6 +109,8 @@ The Part used as the collision detector.
 
 The function checks which voxels are currently inside or intersecting this Part.
 
+Tip: The shape of the collider can significantly change the final result.
+
 #### `blockTag`
 
 The CollectionService tag used to identify the voxels that should be detected.
@@ -168,7 +170,3 @@ Consider the following when using the module:
 - Be careful when generating voxels for large Parts.
 - Avoid generating excessive amounts of voxels simultaneously.
 - Test different resolutions to find a suitable balance between visual quality and performance.
-
-## License
-
-See the repository's license for usage and distribution permissions.
