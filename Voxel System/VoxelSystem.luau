@@ -29,11 +29,15 @@ function module.setupVoxel(part: Part, voxelResolution: number?, createModel: bo
 		block:AddTag(tag)
 	end
 
-	for x=0, size_x do
-		for y=0, size_y do
-			for z=0, size_z do
+	for x=1, size_x do
+		for y=1, size_y do
+			for z=1, size_z do
 				local blockClone = block:Clone()
-				blockClone.Position = Vector3.new(part.Position.X / 2 - (x*voxelResolution), part.Position.Y / 2 - (y*voxelResolution), part.Position.Z / 2 - (z*voxelResolution))
+				blockClone.Position = part.Position + Vector3.new(
+					-part.Size.X/2 + (x - 0.5) * voxelResolution,
+					((-part.Size.Y/2) + part.Size.Y/2) + (y - 1) * voxelResolution,
+					-part.Size.Z/2 + (z - 0.5) * voxelResolution
+				)
 			
 				if model ~= nil then
 					blockClone.Parent = model
