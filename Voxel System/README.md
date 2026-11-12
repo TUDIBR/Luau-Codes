@@ -91,7 +91,7 @@ This is especially useful when working with `detectVoxelBlock`, since the tag al
 
 ---
 
-### `detectVoxelBlock(collider, blockTag, detectedBlocksMem)`
+### `detectVoxelBlock(collider, blockTag, detectedBlocksMem?)`
 
 Detects voxels currently intersecting a collider and identifies blocks that are no longer colliding.
 
