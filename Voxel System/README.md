@@ -22,7 +22,7 @@ The module is designed to be flexible, allowing developers to create their own m
 2. Insert it into your Roblox project as a `ModuleScript`.
 3. Require the module in your script.
 
-```lua
+```luau
 local VoxelSystem = require(path.to.VoxelSystem)
 ```
 
