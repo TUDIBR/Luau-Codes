@@ -60,7 +60,7 @@ Defines the size of each generated voxel, in studs.
 
 Voxel count increases significantly as the resolution decreases.
 
-For example, using a resolution of `0.1` generates approximately 1,000 voxels for every cubic stud of volume.
+For example, using a resolution of `0.1` generates 1,000 voxels for every cubic stud of volume.
 
 Choose a resolution according to the size of the reference Part and the performance requirements of your game.
 
